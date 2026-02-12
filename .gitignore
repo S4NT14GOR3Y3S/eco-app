@@ -1,0 +1,27 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de Node (si usas alguna herramienta)
+node_modules/
+package-lock.json
+
+# Archivos de prueba
+test/
+*.test.js
+
+# Archivos grandes temporales
+*.tmp
+*.temp
+
+# Respaldos
+*.bak
+*.backup
