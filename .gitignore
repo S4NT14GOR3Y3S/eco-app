@@ -1,0 +1,54 @@
+# Archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Node (si usas herramientas de build)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Archivos de cache
+.cache/
+*.cache
+
+# Archivos de prueba
+test/
+*.test.js
+coverage/
+
+# Build outputs (si agregas build process)
+dist/
+build/
+
+# Configuración local
+.env
+.env.local
+
+# Archivos grandes que no queremos en Git
+*.mp4
+*.mov
+*.avi

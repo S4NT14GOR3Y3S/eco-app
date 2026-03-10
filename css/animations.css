@@ -1,0 +1,517 @@
+/* ============================================
+   ANIMATIONS.CSS - Animaciones de ECO
+   ============================================ */
+
+/* === ANIMACIONES DE ENTRADA === */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === ANIMACIONES DE REBOTE === */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes letterBounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* === ANIMACIONES DE PULSO === */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes scanPulse {
+    0%, 100% {
+        border-width: 5px;
+        opacity: 1;
+    }
+    50% {
+        border-width: 8px;
+        opacity: 0.6;
+    }
+}
+
+/* === ANIMACIÓN DE SHAKE (ERROR) === */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+/* === ANIMACIÓN DE CONFETTI === */
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* === ANIMACIÓN DE CELEBRACIÓN === */
+@keyframes celebrate {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.2) rotate(-10deg);
+    }
+    50% {
+        transform: scale(1.3) rotate(10deg);
+    }
+    75% {
+        transform: scale(1.2) rotate(-10deg);
+    }
+}
+
+.celebrate {
+    animation: celebrate 0.6s ease-in-out;
+}
+
+/* === ANIMACIÓN DE ESTRELLA === */
+@keyframes starPop {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.3) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.star-pop {
+    animation: starPop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* === ANIMACIÓN DE GIRO === */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+/* === ANIMACIÓN DE RESPLANDOR === */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(126, 211, 33, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(126, 211, 33, 0.8), 0 0 60px rgba(126, 211, 33, 0.6);
+    }
+}
+
+.glow-success {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* === ANIMACIÓN DE LATIDO === */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.1);
+    }
+    20%, 40% {
+        transform: scale(1);
+    }
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* === ANIMACIÓN DE ONDA === */
+@keyframes wave {
+    0%, 100% {
+        transform: scaleY(0.5);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+}
+
+/* === ANIMACIÓN DE DESLIZAMIENTO === */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === ANIMACIÓN DE FLIP === */
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes flipBack {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.flip {
+    animation: flip 0.6s ease-in-out;
+}
+
+.flip-back {
+    animation: flipBack 0.6s ease-in-out;
+}
+
+/* === ANIMACIÓN DE TYPING (Para texto) === */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* === ANIMACIÓN DE FLOAT === */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* === ANIMACIÓN DE ZOOM === */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* === ANIMACIÓN DE RESPUESTA CORRECTA === */
+@keyframes correctAnswer {
+    0% {
+        transform: scale(1);
+        background: white;
+    }
+    50% {
+        transform: scale(1.1);
+        background: rgba(126, 211, 33, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        background: rgba(126, 211, 33, 0.1);
+    }
+}
+
+.correct-answer {
+    animation: correctAnswer 0.6s ease-in-out;
+}
+
+/* === ANIMACIÓN DE RESPUESTA INCORRECTA === */
+@keyframes incorrectAnswer {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-15px);
+        background: rgba(255, 107, 107, 0.2);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+        background: white;
+    }
+}
+
+.incorrect-answer {
+    animation: incorrectAnswer 0.5s ease-in-out;
+}
+
+/* === ANIMACIÓN DE APARICIÓN SECUENCIAL === */
+.stagger-fade-in > * {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.stagger-fade-in > *:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stagger-fade-in > *:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stagger-fade-in > *:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stagger-fade-in > *:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.stagger-fade-in > *:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.stagger-fade-in > *:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* === ANIMACIÓN DE TRAZO (Para Canvas) === */
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* === ANIMACIÓN DE CARGA === */
+@keyframes loadingDots {
+    0%, 20% {
+        content: '.';
+    }
+    40% {
+        content: '..';
+    }
+    60%, 100% {
+        content: '...';
+    }
+}
+
+/* === CLASES UTILITARIAS DE ANIMACIÓN === */
+.animate-slow {
+    animation-duration: 2s;
+}
+
+.animate-fast {
+    animation-duration: 0.5s;
+}
+
+.animate-delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animate-delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* === ANIMACIÓN DE PARTÍCULAS (Para efectos especiales) === */
+@keyframes particle {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* === REDUCCIÓN DE MOVIMIENTO (Accesibilidad) === */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* === ANIMACIONES ESPECÍFICAS DE TRANSICIÓN DE PANTALLA === */
+.screen-enter {
+    animation: slideInUp 0.4s ease-out;
+}
+
+.screen-exit {
+    animation: fadeIn 0.3s ease-in reverse;
+}
+
+/* === ANIMACIÓN PARA INSTRUCCIONES === */
+@keyframes pointDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.point-down {
+    animation: pointDown 1s ease-in-out infinite;
+}
+
+/* === ANIMACIÓN DE LOADING CIRCULAR === */
+@keyframes rotateLoader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-spin {
+    animation: rotateLoader 1s linear infinite;
+}
+
+/* === ANIMACIÓN DE ÉXITO === */
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* === ANIMACIÓN DE CONTADOR === */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(1.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.count-up {
+    animation: countUp 0.5s ease-out;
+}

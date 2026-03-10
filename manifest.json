@@ -1,0 +1,93 @@
+{
+  "name": "ECO - Educación Cognitiva Optimizada",
+  "short_name": "ECO",
+  "description": "Aplicación educativa para el aprendizaje de vocales en niños con discapacidad cognitiva moderada",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#4A90E2",
+  "theme_color": "#4A90E2",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "es-ES",
+  "dir": "ltr",
+  "categories": ["education", "kids", "accessibility"],
+  "icons": [
+    {
+      "src": "assets/images/ui/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ui/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/ui/screenshot1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Pantalla principal"
+    },
+    {
+      "src": "assets/images/ui/screenshot2.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Actividad de aprendizaje"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Continuar aprendiendo",
+      "short_name": "Continuar",
+      "description": "Volver a la última lección",
+      "url": "/index.html?screen=menu",
+      "icons": [
+        {
+          "src": "assets/images/ui/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
